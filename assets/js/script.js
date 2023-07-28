@@ -13,15 +13,14 @@ var cityArr = [];
 
 
 
-function weatherSearch(event) {
-    event.preventDefault();
+function weatherSearch() {
     var cityName = cityInput.value;
-    if (!cityArr.includes(cityName)) {
+    // if (!cityArr.includes(cityName)) {
         console.log(cityArr);
         cityArr.push(cityName);
         console.log(cityArr);
         localStorage.setItem('city', JSON.stringify(cityArr));
-    }
+    // }
     // searchHistoryEl.innerHTML="<li class='list-group-item border-0'><button type='button' id='city-btn' class='btn btn-secondary w-100'>" + cityName + "</button></li>";
 
     displayWeather(cityName);
