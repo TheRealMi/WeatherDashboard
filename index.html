@@ -20,12 +20,12 @@
         <div class="col-11 col-md-2 border-end">
             <section class="mx-3  d-grid gap-2">
                 <h2 class="mt-2">Search for a City:</h2>
-                <input type="text" class="form-control" aria-label="Sizing example input"
+                <input type="text" class="form-control" id="city-input" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-default">
-                <button class="btn btn-primary my-3" type="button">Search</button>
+                <button class="btn btn-primary my-3" id="search-btn" type="button">Search</button>
                 <hr>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item  border-0"><button type="button"
+                <ul id="search-history" class="list-group list-group-flush">
+                    <!-- <li class="list-group-item  border-0"><button type="button"
                             class="btn btn-secondary w-100">Miami</button></li>
                     <li class="list-group-item  border-0"><button type="button"
                             class="btn btn-secondary w-100">Chicago</button></li>
@@ -34,7 +34,7 @@
                     <li class="list-group-item  border-0"><button type="button"
                             class="btn btn-secondary w-100">Houston</button></li>
                     <li class="list-group-item  border-0"><button type="button" class="btn btn-secondary w-100">New
-                            York</button></li>
+                            York</button></li> -->
                 </ul>
             </section>
         </div>
@@ -48,59 +48,59 @@
                 </div>
             </div>
             <h3>5-Day Forecast</h3>
-            <div class="row">
+            <div id= "forecast-cards" class="row">
                 <div class="col-sm-2 mb-3 mb-sm-0">
                     <div class="card">
                         <div class="card-body bg-secondary text-white">
-                            <h5 class="card-title card-date">Date 2</h5>
+                            <h5 id="card-title1" class="card-date">Date 2</h5>
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
-                            <p class="card-text">Temp:</p>
-                            <p class="card-text">Wind:</p>
-                            <p class="card-text">Humidity:</p>
+                            <p id="temp1">Temp:</p>
+                            <p id="wind1">Wind:</p>
+                            <p id="humidity1">Humidity:</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="card">
                         <div class="card-body bg-secondary text-white">
-                            <h5 class="card-title card-date">Date 3</h5>
+                            <h5 id = "card-title2" class="card-title2 card-date">Date 3</h5>
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
-                            <p class="card-text">Temp:</p>
-                            <p class="card-text">Wind:</p>
-                            <p class="card-text">Humidity:</p>
+                            <p id="temp2">Temp:</p>
+                            <p id="wind2">Wind:</p>
+                            <p id="humidity2">Humidity:</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="card">
                         <div class="card-body bg-secondary text-white">
-                            <h5 class="card-title card-date">Date 4</h5>
+                            <h5 id = "card-title3" class="card-title3 card-date">Date 4</h5>
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
-                            <p class="card-text">Temp:</p>
-                            <p class="card-text">Wind:</p>
-                            <p class="card-text">Humidity:</p>
+                            <p id="temp3">Temp:</p>
+                            <p id="wind3">Wind:</p>
+                            <p id="humidity3">Humidity:</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="card">
                         <div class="card-body bg-secondary text-white">
-                            <h5 class="card-title card-date">Date 5</h5>
+                            <h5 id = "card-title4"class="card-title4 card-date">Date 5</h5>
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
-                            <p class="card-text">Temp:</p>
-                            <p class="card-text">Wind:</p>
-                            <p class="card-text">Humidity:</p>
+                            <p id="temp4">Temp:</p>
+                            <p id="wind4">Wind:</p>
+                            <p id="humidity4">Humidity:</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="card">
                         <div class="card-body bg-secondary text-white">
-                            <h5 class="card-title card-date">Date 6</h5>
+                            <h5 id = "card-title5"class="card-title5 card-date">Date 6</h5>
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
-                            <p class="card-text">Temp:</p>
-                            <p class="card-text">Wind:</p>
-                            <p class="card-text">Humidity:</p>
+                            <p id="temp5">Temp:</p>
+                            <p id="wind5">Wind:</p>
+                            <p id="humidity5">Humidity:</p>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
         </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
